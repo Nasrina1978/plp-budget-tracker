@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Advanced Selector 1: Descendant selector */
+.expenses-section td {
+    text-align: left;
+}
+
+/* Advanced Selector 2: Direct child selector */
+.add-expense-section > form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+thead tr {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Advanced Selector 3: pseudo-class based on position */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:first-child {
+    font-weight: bold;
+}
+
+/* Interactive hover */
+tbody tr:hover {
+    background-color: #d1e7dd;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Advanced Selector 4: negation pseudo-class */
+input:not([type="submit"]) {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+}
+
+/* Advanced Selector 5: focus state */
+input:focus, select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #e8f5e9;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+details {
+    margin: 20px 0;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
